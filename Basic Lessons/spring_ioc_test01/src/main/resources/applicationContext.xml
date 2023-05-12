@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--bean标签标示配置bean
+        id属性标示给bean起名字
+        class属性表示给bean定义类型
+    -->
+
+    <!--  using import to include other modules' configuration xml files: application-user & application-orders  -->
+    <import resource="classpath:applicationContext-user.xml"></import>
+
+    <import resource="classpath:applicationContext-orders.xml"></import>
+
+<!--    &lt;!&ndash;  default env  &ndash;&gt;-->
+<!--    &lt;!&ndash;  Autowire configuration Example  &ndash;&gt;-->
+<!--    <bean id="userService" class="ds.yuanma.service.impl.UserServiceImpl" ></bean>-->
+
+<!--    <bean id="userDao" class="ds.yuanma.dao.impl.UserDaoImpl"></bean>-->
+
+<!--    &lt;!&ndash;  dev env  &ndash;&gt;-->
+<!--    <beans profile="dev">-->
+<!--        <bean id="userServiceDev" class="ds.yuanma.service.impl.UserServiceImpl"></bean>-->
+<!--    </beans>-->
+
+<!--    &lt;!&ndash;  test env  &ndash;&gt;-->
+<!--    <beans profile="test">-->
+<!--        <bean id="userDaoTest" class="ds.yuanma.dao.impl.UserDaoImpl"></bean>-->
+<!--    </beans>-->
+
+
+
+<!--    <bean id="userService" class="ds.yuanma.service.impl.UserServiceImpl">-->
+<!--        <property name="stringList">-->
+<!--            <list>-->
+<!--                <value>aaa</value>-->
+<!--                <value>bbb</value>-->
+<!--                <value>ccc</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="userDaoList">-->
+<!--            <list>-->
+<!--                <ref bean="userDao1"></ref>-->
+<!--                <ref bean="userDao2"></ref>-->
+<!--                <ref bean="userDao3"></ref>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="stringSet">-->
+<!--            <set>-->
+<!--                <value>aaa</value>-->
+<!--                <value>bbb</value>-->
+<!--                <value>ccc</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--        <property name="userDaoSet">-->
+<!--            <set>-->
+<!--                <ref bean="userDao1"></ref>-->
+<!--                <ref bean="userDao2"></ref>-->
+<!--                <ref bean="userDao3"></ref>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--        <property name="userDaoMap">-->
+<!--            <map>-->
+<!--                <entry key="d1" value-ref="userDao1"></entry>-->
+<!--                <entry key="d2" value-ref="userDao2"></entry>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--        <property name="properties">-->
+<!--            <props>-->
+<!--                <prop key="p1">ppp1</prop>-->
+<!--                <prop key="p2">ppp2</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    <bean id="userDao1" class="ds.yuanma.dao.impl.UserDaoImpl"></bean>-->
+<!--    <bean id="userDao2" class="ds.yuanma.dao.impl.UserDaoImpl"></bean>-->
+<!--    <bean id="userDao3" class="ds.yuanma.dao.impl.UserDaoImpl"></bean>-->
+
+
+<!--    &lt;!&ndash;  using FactoryBean convention to config Bean  &ndash;&gt;-->
+<!--    <bean id="userDao3" class="ds.yuanma.factory.myBeanFactoryFactoryBean"></bean>-->
+
+<!--    &lt;!&ndash;  non-static beanFactory configuration  &ndash;&gt;-->
+<!--    &lt;!&ndash;  config myBeanFactoryObject  &ndash;&gt;-->
+<!--    <bean id="myBeanFactoryObject" class="ds.yuanma.factory.myBeanFactoryObject"></bean>-->
+<!--    &lt;!&ndash;  config userDao  &ndash;&gt;-->
+<!--    <bean id="userDao2" factory-bean="myBeanFactoryObject" factory-method="userDao">-->
+<!--        <constructor-arg name="username" value="yuama"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;  static beanFactory configuration  &ndash;&gt;-->
+<!--    <bean id="userDao1" class="ds.yuanma.factory.myBeanFactoryStatic" factory-method="userDao">-->
+<!--        <constructor-arg name="name" value="yuama"></constructor-arg>-->
+<!--        <constructor-arg name="age" value="10"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--    <bean id="userService" class="ds.yuanma.service.impl.UserServiceImpl">-->
+<!--        <property name="userDao" ref="userDao"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="userDao" class="ds.yuanma.dao.impl.UserDaoImpl"/>-->
+</beans>
