@@ -14,9 +14,17 @@ public class BeanFactoryTest {
         // read configuration to Factory
         reader.loadBeanDefinitions("beans.xml");
 
-        // obtain bean object based on the id in configuration
+//        // obtain bean object based on the Class type in configuration
+//        UserService userService = beanFactory.getBean(UserService.class);
+//        System.out.println(userService);
+
+        // obtain bean object based on the id in configuration, need Type casting
         UserService userService = (UserService) beanFactory.getBean("userService");
         System.out.println(userService);
+
+//        // obtain bean object based on the id in configuration and return Class object
+//        UserService userService = beanFactory.getBean("userService", UserService.class);
+//        System.out.println(userService);
 
         UserDao userDao = (UserDao) beanFactory.getBean("userDao");
 //        System.out.println(userDao);

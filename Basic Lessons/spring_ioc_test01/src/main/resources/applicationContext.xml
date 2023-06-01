@@ -9,16 +9,55 @@
         class属性表示给bean定义类型
     -->
 
-    <!--  using import to include other modules' configuration xml files: application-user & application-orders  -->
-    <import resource="classpath:applicationContext-user.xml"></import>
+<!--    &lt;!&ndash;  static factory constructor  &ndash;&gt;-->
+<!--    <bean id="in" class="org.apache.ibatis.io.Resources" factory-method="getResourceAsStream">-->
+<!--        <constructor-arg name="resource" value="mybatis-config.xml"></constructor-arg>-->
+<!--    </bean>-->
+<!--    &lt;!&ndash; non-parametric constructor object &ndash;&gt;-->
+<!--    <bean id="builder" class="org.apache.ibatis.session.SqlSessionFactoryBuilder"></bean>-->
+<!--    &lt;!&ndash;  object factory method &ndash;&gt;-->
+<!--    <bean id="sqlSessionFactory" factory-bean="builder" factory-method="build">-->
+<!--        <constructor-arg name="inputStream" ref="in"></constructor-arg>-->
+<!--    </bean>-->
 
-    <import resource="classpath:applicationContext-orders.xml"></import>
+<!--    &lt;!&ndash;  config druid data source  &ndash;&gt;-->
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>-->
+<!--        <property name="url" value="jdbc:mysql://localost:3306/mybatis"></property>-->
+<!--        <property name="username" value="root"></property>-->
+<!--        <property name="password" value="root"></property>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;  config Date object  &ndash;&gt;-->
+<!--    <bean id="simpleDateFormat" class="java.text.SimpleDateFormat">-->
+<!--        <constructor-arg name="pattern" value="yyyy-MM-dd HH:mm:ss"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--    <bean id="date" factory-bean="simpleDateFormat" factory-method="parse">-->
+<!--        <constructor-arg name="source" value="2023-05-22 12:00:00"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;  using import to include other modules' configuration xml files: application-user & application-orders  &ndash;&gt;-->
+<!--    <import resource="classpath:applicationContext-user.xml"></import>-->
+
+<!--    <import resource="classpath:applicationContext-orders.xml"></import>-->
 
 <!--    &lt;!&ndash;  default env  &ndash;&gt;-->
 <!--    &lt;!&ndash;  Autowire configuration Example  &ndash;&gt;-->
 <!--    <bean id="userService" class="ds.yuanma.service.impl.UserServiceImpl" ></bean>-->
 
-<!--    <bean id="userDao" class="ds.yuanma.dao.impl.UserDaoImpl"></bean>-->
+    <bean id="userDao" class="ds.yuanma.dao.impl.UserDaoImpl"></bean>
+    <bean id="userService" class="ds.yuanma.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+    <bean class="ds.yuanma.processor.TimeLogBeanPostProcessor"></bean>
+<!--    <bean class="ds.yuanma.processor.MyBeanPostProcessor"></bean>-->
+
+<!--    <bean class="ds.yuanma.processor.MyComponentBeanFactoryPostProcessor"></bean>-->
+
+<!--    <bean class="ds.yuanma.processor.MyBeanDefinitionRegistryPostProcessor"></bean>-->
+
+<!--    <bean class="ds.yuanma.processor.MyBeanFactoryPostProcessor"></bean>-->
 
 <!--    &lt;!&ndash;  dev env  &ndash;&gt;-->
 <!--    <beans profile="dev">-->
@@ -33,6 +72,19 @@
 
 
 <!--    <bean id="userService" class="ds.yuanma.service.impl.UserServiceImpl">-->
+<!--        <property name="properties">-->
+<!--            <props>-->
+<!--                <prop key="p1">ppp1</prop>-->
+<!--                <prop key="p2">ppp2</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+
+<!--        <property name="userDaoMap">-->
+<!--            <map>-->
+<!--                <entry key="d1" value-ref="userDao1"></entry>-->
+<!--                <entry key="d2" value-ref="userDao2"></entry>-->
+<!--            </map>-->
+<!--        </property>-->
 <!--        <property name="stringList">-->
 <!--            <list>-->
 <!--                <value>aaa</value>-->
@@ -60,18 +112,6 @@
 <!--                <ref bean="userDao2"></ref>-->
 <!--                <ref bean="userDao3"></ref>-->
 <!--            </set>-->
-<!--        </property>-->
-<!--        <property name="userDaoMap">-->
-<!--            <map>-->
-<!--                <entry key="d1" value-ref="userDao1"></entry>-->
-<!--                <entry key="d2" value-ref="userDao2"></entry>-->
-<!--            </map>-->
-<!--        </property>-->
-<!--        <property name="properties">-->
-<!--            <props>-->
-<!--                <prop key="p1">ppp1</prop>-->
-<!--                <prop key="p2">ppp2</prop>-->
-<!--            </props>-->
 <!--        </property>-->
 <!--    </bean>-->
 
