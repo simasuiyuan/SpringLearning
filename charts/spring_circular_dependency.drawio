@@ -1,0 +1,323 @@
+<mxfile host="app.diagrams.net" modified="2023-06-06T13:57:22.320Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="QR5fwmKvfpf594x3ksQN" version="21.3.7" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-0" value="Program Entry" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="307" y="19" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-1" value="ClassPathXmlApplicationContext" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="217" y="69" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-3" value="refresh()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="217" y="119" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-4" value="finishBeanFactoryInitialization(beanFactory)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="217" y="169" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-6" target="6vuPWlvxh2gWG7N2Zphm-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-6" value="preInstantiateSingletons()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="217" y="219" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-7" target="6vuPWlvxh2gWG7N2Zphm-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-7" value="this.getSingleton(beanName)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="547" y="219" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-11" value="&lt;div style=&quot;&quot;&gt;Try to get bean object rom Level I(&lt;span style=&quot;text-align: justify; background-color: initial;&quot;&gt;singletonObjects&lt;/span&gt;), II(&lt;span style=&quot;text-align: justify; background-color: initial;&quot;&gt;earlySingletonObjects&lt;/span&gt;), III(&lt;span style=&quot;text-align: justify; background-color: initial;&quot;&gt;singletonFactoires&lt;/span&gt;&lt;span style=&quot;text-align: justify; background-color: initial;&quot;&gt;), thus to return bean&#39;s object, if cannot find return null&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;shadow=1;glass=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="557" y="269" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-12" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82B366;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="877" y="1159" as="sourcePoint" />
+            <mxPoint x="877" y="9" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-13" value="&lt;h2&gt;&lt;b&gt;&lt;font color=&quot;#d05353&quot;&gt;Bean A Instance Creation&lt;/font&gt;&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="970" y="124" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-14" target="6vuPWlvxh2gWG7N2Zphm-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-14" value="this.getBean(beanName)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="955" y="219" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-15" target="6vuPWlvxh2gWG7N2Zphm-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-15" value="this.doGetBean(beanName)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="955" y="299" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-17" target="6vuPWlvxh2gWG7N2Zphm-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-17" value="this.getSingleton(beanName)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="955" y="379" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-18" target="6vuPWlvxh2gWG7N2Zphm-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-18" value="this.getSingleton(beanName,singletonFactory&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="955" y="459" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-19" target="6vuPWlvxh2gWG7N2Zphm-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-19" value="this.createBean(beanName, mbd, args)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="955" y="539" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-20" target="6vuPWlvxh2gWG7N2Zphm-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-20" value="this.doCreateBean(beanName, mbdToUse, args)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="955" y="619" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-30" value="&lt;div style=&quot;&quot;&gt;Create currently obtained Bean A Object&#39;s warpper&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;shadow=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="747" y="669" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-22" target="6vuPWlvxh2gWG7N2Zphm-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-22" value="this.createBeanInstance(beanName, mbd, args)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="955" y="699" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-29" target="6vuPWlvxh2gWG7N2Zphm-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-29" value="this.addSingletonFactory(beanName, singletonFactory)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="955" y="779" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-32" value="&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;background-color: rgb(43, 43, 43); color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;this.addSingletonFactory(beanName&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;() -&amp;gt; {&lt;br&gt;    &lt;span style=&quot;color:#cc7832;&quot;&gt;return this&lt;/span&gt;.getEarlyBeanReference(&lt;span style=&quot;color:#b389c5;&quot;&gt;beanName&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color:#b389c5;&quot;&gt;mbd&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color:#b389c5;&quot;&gt;bean&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;})&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;shadow=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="537" y="779" width="400" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-33" value="&lt;div style=&quot;&quot;&gt;The Bean A is Instantiated, But haven&#39;t proceed properties population and many other initializing methods, so it will be a semi-completed bean. And this Bean A&#39;s ObjectFactory will be cached under Level III(singletonFactories)&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;shadow=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="936.25" y="849" width="317.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-39" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82B366;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-104">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1325.75" y="1160" as="sourcePoint" />
+            <mxPoint x="1325.75" y="10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-40" target="6vuPWlvxh2gWG7N2Zphm-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-40" value="this.populateBean(beanName, mbd, instanceWrapper)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1418" y="779" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-41" value="&lt;div style=&quot;&quot;&gt;Start to populate properties for semi-completed Bean A&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;shadow=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1423.5" y="844" width="269" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-44" value="&lt;h2&gt;&lt;b&gt;&lt;font color=&quot;#d05353&quot;&gt;Populate Bean B to Bean A&lt;/font&gt;&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1435" y="124" width="246" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-45" target="6vuPWlvxh2gWG7N2Zphm-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-45" value="this.applyPropertyValues(beanName, mbd, bw, (PropertyValues)pvs)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1418" y="649" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-47" target="6vuPWlvxh2gWG7N2Zphm-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-47" value="valueResolver.resolveValueIfNecessary(pv, originalValue)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1417.5" y="534" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-48" target="6vuPWlvxh2gWG7N2Zphm-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-48" value="this.resolveReference(argName, ref)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1417.5" y="439" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-51" target="6vuPWlvxh2gWG7N2Zphm-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-51" value="this.beanFactory.getBean(resolvedName)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1418" y="339" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-53" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82B366;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1805" y="1159" as="sourcePoint" />
+            <mxPoint x="1805" y="9" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.996;exitY=0.493;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-54" target="6vuPWlvxh2gWG7N2Zphm-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1751.5" y="239" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-54" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Start to create to be populated Bean B process&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1387.5" y="224" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-56" target="6vuPWlvxh2gWG7N2Zphm-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-56" value="this.getBean(beanName)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1880" y="219" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-58" value="&lt;h2&gt;&lt;b&gt;&lt;font color=&quot;#d05353&quot;&gt;Bean B Instance Creation&lt;/font&gt;&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1905" y="119" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-61" target="6vuPWlvxh2gWG7N2Zphm-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-61" value="this.doGetBean(beanName)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1880" y="299" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-63" target="6vuPWlvxh2gWG7N2Zphm-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-63" value="this.getSingleton(beanName)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1880" y="379" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-65" target="6vuPWlvxh2gWG7N2Zphm-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-65" value="this.getSingleton(beanName,singletonFactory&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1880" y="459" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-66" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-67" target="6vuPWlvxh2gWG7N2Zphm-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-67" value="this.createBean(beanName, mbd, args)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1880" y="539" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-68" target="6vuPWlvxh2gWG7N2Zphm-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-68" value="this.doCreateBean(beanName, mbdToUse, args)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1880" y="619" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-72" target="6vuPWlvxh2gWG7N2Zphm-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-72" value="this.createBeanInstance(beanName, mbd, args)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1880" y="699" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="6vuPWlvxh2gWG7N2Zphm-76">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2185" y="804" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-73" value="this.addSingletonFactory(beanName, singletonFactory)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1880" y="779" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-76" target="6vuPWlvxh2gWG7N2Zphm-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-76" value="this.populateBean(beanName, mbd, instanceWrapper)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2355.5" y="779" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-77" value="&lt;div style=&quot;&quot;&gt;Start to populate properties for semi-completed Bean B&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;shadow=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2360.5" y="844" width="269" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-78" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-79" target="6vuPWlvxh2gWG7N2Zphm-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-79" value="this.applyPropertyValues(beanName, mbd, bw, (PropertyValues)pvs)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2355.5" y="649" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-80" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-81" target="6vuPWlvxh2gWG7N2Zphm-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-81" value="valueResolver.resolveValueIfNecessary(pv, originalValue)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2355" y="534" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-82" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-83" target="6vuPWlvxh2gWG7N2Zphm-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-83" value="this.resolveReference(argName, ref)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2355" y="439" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-85" target="6vuPWlvxh2gWG7N2Zphm-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-85" value="this.beanFactory.getBean(resolvedName)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#ff0000;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2355.5" y="339" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-98" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-86" target="6vuPWlvxh2gWG7N2Zphm-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-86" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Start to create to be populated Bean A process&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2330" y="224" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-87" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82B366;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2270" y="1159" as="sourcePoint" />
+            <mxPoint x="2270" y="9" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-90" value="&lt;h2&gt;&lt;b&gt;&lt;font color=&quot;#d05353&quot;&gt;Populate Bean A to Bean B&lt;/font&gt;&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2356.5" y="119" width="246" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-91" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82B366;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2716" y="1159" as="sourcePoint" />
+            <mxPoint x="2716" y="9" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-93" target="6vuPWlvxh2gWG7N2Zphm-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-93" value="this.getBean(beanName)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2786" y="219" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="6vuPWlvxh2gWG7N2Zphm-95" target="6vuPWlvxh2gWG7N2Zphm-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-95" value="this.doGetBean(beanName)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2786" y="299" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-96" value="this.getSingleton(beanName)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2786" y="379" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-97" value="&lt;h2&gt;&lt;b&gt;&lt;font color=&quot;#d05353&quot;&gt;Bean A Instance Creation (Compeletion)&lt;/font&gt;&lt;/b&gt;&lt;/h2&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2811" y="119" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-100" value="&lt;div style=&quot;&quot;&gt;Now, both Bean &lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;A &lt;/font&gt;&lt;/b&gt;and Bean &lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;B&lt;/font&gt;&lt;/b&gt; are cached in &lt;b&gt;&lt;u&gt;&lt;font color=&quot;#1100ff&quot;&gt;level III(singletonFactoires)&amp;nbsp;&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;. Obtain Bean &lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;A&lt;/font&gt;&lt;/b&gt;&#39;s ObjectFactory.getObject() method from&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#1100ff&quot;&gt;level III(singletonFactoires)&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;, which actually invoking the Lambda expression from&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#1100ff&quot;&gt;level III(singletonFactoires)&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&amp;nbsp;after Bean &lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;A&lt;/font&gt;&lt;/b&gt; is created. The Lambda expression will return Bean &lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;A&lt;/b&gt;&lt;/font&gt;&#39;s Object (or A&#39;s Proxy).&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;Remove Bean &lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;A&lt;/font&gt;&lt;/b&gt; from&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#1100ff&quot;&gt;level III(singletonFactoires)&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&amp;nbsp;and cache it into&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); text-align: right;&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#ff6600&quot;&gt;level II (earlySingletonObjects)&lt;/font&gt;&lt;/b&gt;, and return the semi-completed Bean &lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;A&lt;/font&gt;&lt;/b&gt; object, start to &lt;b&gt;&lt;i&gt;&lt;u&gt;&lt;font color=&quot;#ff0000&quot;&gt;Backtracking/Returning&lt;/font&gt;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;shadow=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2770" y="430" width="460" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-99" value="&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;background-color: rgb(43, 43, 43); color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;this.addSingletonFactory(beanName&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;() -&amp;gt; {&lt;br&gt;    &lt;span style=&quot;color:#cc7832;&quot;&gt;return this&lt;/span&gt;.getEarlyBeanReference(&lt;span style=&quot;color:#b389c5;&quot;&gt;beanName&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color:#b389c5;&quot;&gt;mbd&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color:#b389c5;&quot;&gt;bean&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;})&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=#f5f5f5;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;shadow=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2850" y="569" width="400" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-105" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82B366;strokeWidth=3;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="6vuPWlvxh2gWG7N2Zphm-104">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1325.75" y="1160" as="sourcePoint" />
+            <mxPoint x="1325.75" y="10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-104" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;After &lt;font color=&quot;#f20707&quot;&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;Returning&amp;nbsp;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/font&gt;to `doCreateBean()` method, Bean &lt;font color=&quot;#f20707&quot;&gt;&lt;b&gt;A&lt;/b&gt;&lt;/font&gt; has been completely created. And then will be cached to &lt;font color=&quot;#8c00ff&quot;&gt;&lt;b&gt;&lt;u&gt;level I (singletonObjects)&lt;/u&gt;&lt;/b&gt;&lt;/font&gt; and removed from &lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff6600&quot;&gt;level II (earlySingletonObjects)&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;align=right;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1253.75" y="560" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-106" value="" style="endArrow=classic;html=1;rounded=0;endWidth=11.395348837209303;fillColor=#0000CC;strokeColor=#0000CC;strokeWidth=6;opacity=70;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1253" y="691" as="sourcePoint" />
+            <mxPoint x="1252.92" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-107" value="&lt;div style=&quot;&quot;&gt;After&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color); color: rgb(242, 7, 7);&quot;&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;Returning&amp;nbsp;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&amp;nbsp;to `doCreateBean()` method, Bean &lt;font color=&quot;#f40b0b&quot;&gt;&lt;b&gt;B&lt;/b&gt;&lt;/font&gt; has been completely created. And then will be cached to &lt;u&gt;&lt;font color=&quot;#8c00ff&quot;&gt;&lt;b&gt;level I (singletonObjects)&lt;/b&gt;&lt;/font&gt;&lt;/u&gt; and removed from &lt;b&gt;&lt;u&gt;&lt;font color=&quot;#0040ff&quot;&gt;level III (&lt;span style=&quot;text-align: left;&quot;&gt;singletonFactories&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;shadow=1;align=right;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="2189.5" y="560" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-108" value="" style="endArrow=classic;html=1;rounded=0;endWidth=11.395348837209303;fillColor=#0000CC;strokeColor=#0000CC;strokeWidth=6;opacity=70;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2189.58" y="689.5" as="sourcePoint" />
+            <mxPoint x="2189.5" y="588.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-109" value="" style="endArrow=classic;html=1;rounded=0;endWidth=11.395348837209303;fillColor=#0000CC;strokeColor=#0000CC;strokeWidth=6;opacity=70;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3120.08" y="430" as="sourcePoint" />
+            <mxPoint x="3120" y="329" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6vuPWlvxh2gWG7N2Zphm-111" value="&lt;b style=&quot;border-color: var(--border-color); color: rgb(51, 51, 51); text-align: left;&quot;&gt;&lt;i style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot; color=&quot;#ff0000&quot;&gt;Backtracking/Returning&lt;/font&gt;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="3170" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
