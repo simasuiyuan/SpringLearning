@@ -4,6 +4,19 @@ import ds.yuanma.dao.UserDao;
 
 public class UserDaoImpl implements UserDao {
 
+    public UserDaoImpl(){
+        System.out.println("userDao Created");
+    }
+
+//    private String username;
+//
+//    public void setUsername(String username) {
+//        this.username = username;
+//    }
+//    public String getUsername() {
+//        return this.username;
+//    }
+
 //    public UserDaoImpl() {
 //        System.out.println("userDao instantiate");
 //    }
@@ -28,13 +41,6 @@ public class UserDaoImpl implements UserDao {
 
         System.out.println("show....");
     }
-//    private String username;
-//
-//    public void setUsername(String username) {
-//        this.username = username;
-//    }
-//    public String getUsername() {
-//        return this.username;
-//    }
-//
+
+
 }

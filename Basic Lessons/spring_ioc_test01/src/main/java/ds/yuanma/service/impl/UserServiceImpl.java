@@ -10,12 +10,19 @@ import java.util.Set;
 
 public class UserServiceImpl implements UserService {
 
+    // paramter-less constructor
+    public UserServiceImpl(){
+        System.out.println("userService Created");
+    }
     private UserDao userDao;
-
+    private  String userName;
     //Bean Factory will invoke this method, from container obtain userDao and configure it here
     public void setUserDao(UserDao userDao) {
         System.out.println("Bean Factory will invoke this method and configure it here:" + userDao);
         this.userDao = userDao;
+    }
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     /*

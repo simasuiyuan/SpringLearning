@@ -46,11 +46,14 @@
 <!--    &lt;!&ndash;  Autowire configuration Example  &ndash;&gt;-->
 <!--    <bean id="userService" class="ds.yuanma.service.impl.UserServiceImpl" ></bean>-->
 
-    <bean id="userDao" class="ds.yuanma.dao.impl.UserDaoImpl"></bean>
     <bean id="userService" class="ds.yuanma.service.impl.UserServiceImpl">
         <property name="userDao" ref="userDao"></property>
+        <property name="userName" value="yuanma"></property>
     </bean>
-    <bean class="ds.yuanma.processor.TimeLogBeanPostProcessor"></bean>
+
+    <bean id="userDao" class="ds.yuanma.dao.impl.UserDaoImpl"></bean>
+    
+<!--    <bean class="ds.yuanma.processor.TimeLogBeanPostProcessor"></bean>-->
 <!--    <bean class="ds.yuanma.processor.MyBeanPostProcessor"></bean>-->
 
 <!--    <bean class="ds.yuanma.processor.MyComponentBeanFactoryPostProcessor"></bean>-->

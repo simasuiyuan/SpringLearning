@@ -20,7 +20,9 @@ public class ApplicationContextTest {
          */
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserDao userDao = (UserDao) applicationContext.getBean("userDao");
-        userDao.show();
+
+
+//        userDao.show();
 //        System.out.println(userDao.getUsername());
 //        OtherBean otherBean =  applicationContext.getBean(OtherBean.class);
 //        System.out.println(otherBean);
